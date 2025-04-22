@@ -30,7 +30,7 @@ document.getElementById("scan").addEventListener("click", async () => {
         });
         const data = await res.json();
         const container = document.getElementById("results");
-        container.innerHTML = ""; 
+        container.innerHTML = "";
 
         if (data.events) {
             const events = Array.isArray(data.events) ? data.events : JSON.parse(data.events);
@@ -39,14 +39,13 @@ document.getElementById("scan").addEventListener("click", async () => {
                 const link = generateEventLink(event);
                 const div = document.createElement("div");
                 div.innerHTML = `
-            <h4>${event.title}</h4>
-            <p>${event.start_datetime} → ${event.end_datetime}</p>
-            <a href="${link}" target="_blank">➕ Add to Google Calendar</a>
-            <hr>
-          `;
+                <h4>${event.title}</h4>
+                <p>${event.start_datetime} → ${event.end_datetime}</p>
+                <a href="${link}" target="_blank">➕ Add to Google Calendar</a>
+                `;
                 container.appendChild(div);
             });
-            
+
         } else {
             container.innerText = "No events found 😢";
         }
