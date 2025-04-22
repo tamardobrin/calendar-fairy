@@ -1,1 +1,17 @@
 "node_modules\n__pycache__\ndist\n.env" 
+backend/__pycache__/
+backend/venv/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+node_modules/
+dist/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+backend/.env
