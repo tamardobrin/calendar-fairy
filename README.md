@@ -16,11 +16,6 @@
 
 ### 1. Clone the repo
 
-```bash
-git clone https://github.com/your username/calendar-fairy.git
-cd calendar-fairy
-```
-
 ### 2. set up the backend
 ```
 cd backend
