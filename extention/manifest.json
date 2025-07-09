@@ -4,6 +4,7 @@
     "version": "1.0",
     "description": "Scan webpages for events and send them to Google Calendar ✨",
     "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
     },
